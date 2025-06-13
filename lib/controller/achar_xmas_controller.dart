@@ -1,5 +1,3 @@
-
-
 class AcharXmasController {
   String palavra = "XMAS";
 
@@ -12,7 +10,7 @@ class AcharXmasController {
       for (int j = 0; j <= colunas - palavra.length; j++) {
         bool achou = true;
         for (int k = 0; k < palavra.length; k++) {
-          if (matriz[i][j + k] != palavra[k]) { 
+          if (matriz[i][j + k] != palavra[k]) {
             achou = false;
             break;
           }
@@ -125,8 +123,8 @@ class AcharXmasController {
     return contador;
   }
 
-  int buscarDiagonalSecundaria(List<List<String>> matriz) {
-    int contador = 0;
+ int buscarDiagonalSecundaria(List<List<String>> matriz) {
+     int contador = 0;
     int linhas = matriz.length;
     int colunas = matriz[0].length;
 
